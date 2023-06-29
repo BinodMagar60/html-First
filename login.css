@@ -1,0 +1,216 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('logo.png');
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+    background-size: 750px 750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+  
+}
+
+.form-box
+{
+    width: 90%;
+    max-width: 450px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%) ;
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    box-shadow: 0 0 8px  10px lightgrey;
+    border-radius:10px;
+   background-blend-mode: lighten;
+}
+
+.form-box h1
+{
+
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative; 
+
+    
+
+}
+
+.form-box h1::after
+{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.input-field
+{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input
+{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px;
+
+}
+
+.input-field i{
+    margin-left: 15px;
+}
+
+
+
+form p
+{
+    max-height: 15px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    font-size: 13px;
+    display: none;
+
+}
+
+
+form p a{
+    
+    text-decoration: none;
+}
+
+.btn-field
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    margin-top: 15px;
+    flex-basis: 48%;
+    background: #141313;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+
+
+
+.input-group
+{
+    height: 230px;
+}
+
+.btn-field button.disable
+{
+    background: #aca9a9;
+    color: #000;
+}
+
+
+
+.Submit
+{
+    width: 100%;
+    margin-top: 15px;
+    flex-basis: 48%;
+    background: #fff;
+    color: black;
+    border: 2px solid black;
+    height: 40px;
+    border-radius: 20px;
+    
+    outline: 0;
+    cursor: pointer;
+    transition: all 500ms;
+
+}
+
+.Submit:hover{
+    background: black;
+    color: white;
+}
+
+
+.in-btnline{
+    width: 98%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    flex-basis: 48%;
+    background: black;
+    border: 2px solid black;
+    
+    height: 5px;
+    border-radius: 3px;
+    background: #000;
+   
+   
+    left: 50%;
+    
+}
+
+.home-btn
+{
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+   
+}
+.home-btn button{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    background: white;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 0 6px 5px lightgray;
+
+}
+
+
+
+
+
+
+
+
+
