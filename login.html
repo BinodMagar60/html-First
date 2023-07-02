@@ -14,9 +14,10 @@
 </head>
 
 <body>
-    <div class="home-btn">
-        <a href="Homepage.html"><button><i class="fa-sharp fa-solid fa-house"></i></button></a>
-    </div>
+    
+    
+
+
 
     <div class="container">
         <div class="form-box">
@@ -25,17 +26,17 @@
                 <div class="input-group">
                     <div class="input-field" id="namefield">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" >
                     </div>
 
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" >
                     </div>
 
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" >
                     </div>
                     <p id="forgot" class="forgot" id="forgot">Forgot Password? <a href="#">Click here</a></p>
 
@@ -43,6 +44,24 @@
                 <div>
                     <button type="button" class="Submit" id="Submit">Create Account</button>
                 </div>
+                <div class="divider">
+                    <section>
+
+                    </section>
+                    Or
+                    <section>
+
+                    </section>
+
+                </div>
+
+                <div class="loginwith">
+                    <div class="google"><button><a href="#"><i class="fa-brands fa-google"></i> <span class="l1" id="l1">Signup with Google</span></a></button></div>
+                    <div class="facebook"><button><a href="#"><i class="fa-brands fa-facebook"></i> <span class="l2" id="l2">Signup with Facebook</span></a></button></div>
+                </div>
+
+
+
 
                 <div class="in-btnline">
 
@@ -55,10 +74,11 @@
                 </div>
             </form>
         </div>
+        <a href="Homepage.html"><button class="btn-home"><i class="fa-sharp fa-solid fa-house"></i></button></a>
     </div>
 
 
-
+    
 
 
     <script>
@@ -66,7 +86,9 @@
         let signinbtn = document.getElementById("signinbtn");
         let namefield = document.getElementById("namefield");
         let title = document.getElementById("title");
-        let forgot = document.getElementById("forgot")
+        let forgot = document.getElementById("forgot");
+        let l1 = document.getElementById("l1");
+        let l2 = document.getElementById("l2");
 
         signinbtn.onclick = function()
         {
@@ -77,6 +99,10 @@
             Submit.innerHTML = "Login";
             forgot.style.display = 'block';
             forgot.style.maxHeight = "15px";
+            l1.innerHTML = "Signin with Google";
+            l2.innerHTML = "Signin with facebook";
+            
+
 
         }
 
@@ -88,6 +114,9 @@
             signinbtn.classList.add("disable");
             Submit.innerHTML = "Create Account";
             forgot.style.maxHeight = "0";
+            l1.innerHTML = "Signup with Google";
+            l2.innerHTML = "Signup with facebook";
+            
 
         
             

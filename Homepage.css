@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -15,11 +15,10 @@
 
 header{
  
-    top: 0;
-    left: 0;
+    
     padding-left: 20px; 
     width: 100%;
-    height: 75px;
+    height: 80px;
     background-color:#1b033b ;
     display: flex;
     justify-content: space-between;
@@ -27,21 +26,59 @@ header{
 }
 
 img{
-    width:75px;
-    height: 75px;
+    width:80px;
+    height: 80px;
     
 }
 .navigation{
+   
+    display: flex;
     margin-top: 25px;
+    background-color: #1b033b;
+
 
 }
+.navigation
+{
+    list-style: none;
+}
+.navigation ul
+{
+    list-style: none;
+    
+    
+}
+.navigation li{
+    background-color: #1b033b;
+    text-decoration: none;
+    
+}
+
+.dropdown li{
+    display: none;
+}
+
+.navigation li:hover li{
+   
+    display: block;
+    margin-top: 1px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
 
 .navigation a{
     
     text-decoration: none;
     margin: 20px;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
+
 
     
 }
@@ -53,16 +90,29 @@ img{
 
 
 .clickablebutton{
-    font-size: 25px;
+    font-size: 22px;
     padding: 0 25px;
     border-radius: 10px;
     border: 3px solid white;
     background: #1b033b;
     color: white;
     cursor: pointer;
-    transition-duration: all 0.5s;
+    transition-duration: 0.5s;
 
 }
+.whole-page
+{
+    padding-top: none;
+}
+.navv{
+    top:0;
+    margin-top: none;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
 
 
 .clickablebutton:hover{
@@ -76,13 +126,21 @@ img{
 
 /* for search button */
 
+.search-rec
+{
+    margin-top: 120px;
+}
+
+
 .Search-box{
     width: 100%;
-    height: 35px;
+    height: 50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     background-color: white;
+    margin-top: 20px;
+    clear: both;
     
    
     
@@ -90,10 +148,10 @@ img{
 
 .search{
     
-    width: 250px;
-    height: 30px;
+    width: 500px;
+    height: 40px;
     border: 2px solid black;
-    border-radius: 14px;
+    border-radius: 25px;
     display: flex;
     justify-content: space-between;
     padding: 2px 5px;
@@ -104,17 +162,21 @@ img{
     margin-left: 5px ;
     flex: 1;
     width: 250px;
-    border: transparent;
+    font-size: 23px;
+    border: none;
+    outline: none;
     background-color: white;
 }
 
 .Search-box input::placeholder{
+    font-size: 23px ;
     color: rgb(131, 131, 131);
 }
 
 
 .Search-box button{
-    
+    margin-top: 3px;
+    margin-right: 8px;
     width: 27px;
     height: 27px;
     font-size: 22px;
@@ -123,6 +185,294 @@ img{
     background-color: transparent; 
     cursor: pointer;
 }
+
+
+
+
+
+/* For recommendation button */
+
+
+.recom-container{
+
+    width:100%;
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    
+   
+    
+}
+
+
+.recom{
+   
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+
+.recom button{
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 28px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 0 0 6px 2px lightgray ;
+    transition: all 500ms;
+}
+
+
+.recom button:hover{
+    background-color: white;
+    color: black;
+    opacity:0.5;
+}
+
+.recom button:focus{
+    
+    background-color: #1b033b;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* after recommendation button */
+
+
+.main-container{
+    width: 100%;
+    height: 1000px;
+   
+ 
+    margin-top: 35px;
+    padding: 3px;;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.rightside-extra{
+    position: fixed;
+    z-index: 1;
+    left: 15px;
+    background-color: white;
+    
+    border-radius: 3px;
+    width: 11%;
+    padding: 10px 3px;
+    height: fit-content;
+    box-shadow: 0 0 6px 5px lightgray;
+}
+.rightside-extra div{
+    margin-left: 9px;
+}
+
+.rightside-extra div a, .rightside-extra div{
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 15px;
+    
+}
+
+/* .rightside-extra div p{
+    font-size: 10px;
+} */
+
+.divider-right{
+    margin: 5px 0;
+    height: 1px;
+    width: 180px;
+    background: black;
+    border: none
+}
+.error-div{
+    margin: 5px 0;
+    height: 1px;
+    width: 180px;
+    background: black;
+    border: none
+}
+.dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: rgb(17, 253, 17);
+
+}
+
+
+.subs li a{
+    font-size: 15px;
+}
+
+.sub1{
+    margin: none;
+    border: none;
+}
+
+.subs
+{
+    list-style: none;
+    
+    
+}
+.subs li{
+    /* display: flex; */
+    height: 22px;
+    
+}
+.subs li i{
+    margin-left: 25px ;
+    margin-top: 2px;
+    font-size: 11px;
+}
+
+
+.sub p
+{
+    margin-left: 15px;
+   
+    padding: 0;
+}
+
+
+
+
+.news-container{
+    position: absolute;
+    right: 15px;
+    width: 85%;
+    height: 1000px;
+    
+    border-radius: 3px;
+
+}
+
+.news1{
+    background-color: white;
+    width: 1100px;
+    height: fit-content;
+    padding-bottom: 50px ;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 6px 5px lightgray;
+}
+.name{
+    display: inline;
+}
+
+
+.name a img{
+    height: 50px;
+    width: 50px;
+    bottom: 2px;
+}
+.name a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+.channel-name{
+    padding-top: 25px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px 10px 0 0;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.channel-name a{
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+    max-width: fit-content;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.more{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: transparent;
+    color: black;
+    margin-top: 10px;
+    transition: 500ms;
+}
+.more:hover{
+    background-color: rgb(97, 97, 97);
+    color: white;
+
+}
+
+
+
+
+
+
+
+.channel-name a div img{
+    height: 70px;
+    width: 70px;
+    margin-right: 15px;
+}
+
+
+.channelhead{
+    margin-top: 25px;
+    
+}
+
+.pic{
+    padding-top: 25px;
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pic img{
+    height:500px ;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
 
 
 

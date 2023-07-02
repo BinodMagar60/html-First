@@ -8,27 +8,183 @@
     <title>CCNVH</title>
     <script src="https://kit.fontawesome.com/5b5ba54d82.js" crossorigin="anonymous"></script>
 
+    <!-- <script>
+        function searchbutton() {
+          var query = document.getElementById("search-input").value;
+          if (query.trim() !== "") {
+            var searchUrl = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            window.open(searchUrl, "_blank");
+          }
+        }
+      </script>
+ -->
+
+
+
 </head>
 <body>
+    <div class="whole-page">
     <div class="navv">
     <header>
        <a href="#"><img src="Logo2.png" alt="Logo"></a> 
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#">Contact us</a>
-            <a href="login.html"><button class="clickablebutton">Signup</button></a>
-        </nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown">
+                <li><a href="#">International</a></li>
+                <li><a href="#">National</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Others</a></li>
+
+            </ul>
+            </li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="login.html"><button class="clickablebutton">Signup</button></a></li>
+        </ul>
     </header>
 </div>
-    <div class="Search-box">
-        <form class="search">
-            <input type="text" class="search-input" name="searchbox" placeholder="Search">
-            <button name="searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        
 
+<div class="search-rec">
+    <div class="Search-box">
+        <form action="https://www.google.com/search?q=" method="get" class="search">
+            <input type="text" class="search-input" name="searchbox" placeholder="Search">
+            <button type="submit" name="searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
     </div>
+<div class="recom-container">
+
+    <div class="recom">
+        <button>All</button>
+        <button>International</button>
+        <button>Popular</button>
+        <button>History</button>
+        <button>Live</button>
+        <button>Fashion</button>
+        <button>Sports</button>
+    </div>
+</div>
+</div>
+
+
+<div class="main-container">
+    <div class="rightside-extra">
+    
+    <div><a href="#"><i class="fa-solid fa-user"></i> Profile</a></div>
+    <div><a href="#"><i class="fa-solid fa-star"></i> Favourite</a></div>
+    <div><a href="#"><i class="fa-solid fa-money-check-dollar"></i> Subscriptions</a></div>
+    
+    <div class="divider-right"></div>
+    
+    <div><a href="#"><i class="fa-solid fa-book"></i> Library</a></div>
+    <div><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></div>
+    <div><a href="#"><i class="fa-solid fa-clock"></i> Watch Later</a></div>
+    
+    <div class="error-div"></div>
+    
+    <div class="sub"><p>Subscriptions</p>
+       <ul class="subs">
+        <li><i class="fa-solid fa-circle" style="color: #54ff52;"></i><a href="#">CCNVH Official</a></li>
+        <li><i class="fa-solid fa-circle" style="color: #54ff52;"></i><a href="#">#channel1</a></li>
+        <li><i class="fa-solid fa-circle" style="color: #ff1515;"></i><a href="#">#channel2</a></li>
+        <li><i class="fa-solid fa-circle" style="color: #54ff52;"></i><a href="#">#channel3</a></li>
+        <li><i class="fa-solid fa-circle" style="color: #ff1515;"></i><a href="#">#channel4</a></li>
+        <li><i class="fa-solid fa-circle" style="color: #ff1515;"></i><a href="#">#channel5</a></li>
+       </ul>
+    
+    </div>
+    
+    <div class="divider-right"></div>
+    <div><a href="setting.html"><i class="fa-solid fa-gear"></i> Setting</a></div>
+    <div><a href="report.html"><i class="fa-solid fa-flag"></i> Report</a></div>
+    <div><a href="help.html"><i class="fa-solid fa-circle-question"></i> Help</a></div>
+    <div><a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> feedback</a></div>
+    
+    
+    <div class="divider-right"></div>
+    <div class="about"><p>About Press Copyright Contact us Creator Advertise Developers</p>
+    <p> Terms Privacy Policy & Safety How website works and Test new features</p>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="news-container">
+    
+        <div class="news1">
+           <div class="channel-name">
+            <a href="#">
+                <div>
+                    <img src="Logo.png" alt="Logo">
+                </div>
+                <div class="channelhead">
+                    @CCNVH Official <i class="fa-solid fa-circle-check" style="color: #ff0000;"></i>
+                </div>
+            </a>
+           <button class="more"> <i class="fa-solid fa-ellipsis-vertical" ></i></button>
+        </div>
+
+        <div class="pic">
+            <img src="news.jpeg" alt="news">
+        </div>
+          
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+    
+    
+    </div>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
     
 </body>
 </html>

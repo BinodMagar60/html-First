@@ -1,3 +1,10 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+
 *
 {
     margin: 0;
@@ -131,7 +138,7 @@ form p a{
 
 .input-group
 {
-    height: 230px;
+    height: 200px;
 }
 
 .btn-field button.disable
@@ -167,7 +174,7 @@ form p a{
 
 .in-btnline{
     width: 98%;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 15px;
     flex-basis: 48%;
     background: black;
@@ -182,32 +189,114 @@ form p a{
     
 }
 
-.home-btn
-{
-    position: sticky;
-    display: flex;
-    justify-content: flex-end;
-    height: 70px;
-   
-}
-.home-btn button{
+
+
+.btn-home{
     cursor: pointer;
     height: 50px;
     width: 50px;
-    font-size: 20px;
-    position: relative;
+    position: fixed;
+    left: 5px;
     top: 5px;
-    right: 5px;
-    background: white;
-    border-radius: 6px;
-    border-style: solid;
+    font-size: 20px;
     border-color: white;
+    border-style: solid;
     box-shadow: 0 0 6px 5px lightgray;
+    background: white;
+    color: #141313;
+    border-radius: 6px;;
+}
+
+
+
+
+
+
+
+
+
+.divider{
+    margin: 8px 0;
+
+    display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+}
+
+
+.divider section{
+    border: none;
+    height: 1px;
+    width: 150px;
+    background-color: black;
+    margin-top:7px;
+}
+
+.loginwith{
+   
+    margin-top: 3px;
+    
 
 }
 
 
 
+.facebook button,.google button{
+
+   
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.facebook button a,.google button a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+
+.facebook button a i,.google button a i{
+    margin-right: 8px;
+}
+
+.google button{
+    background-color: white;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.google button:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.facebook button{
+    background-color: blue;
+    border-color: blue;
+    border-style: solid;
+    cursor: pointer;
+
+}
+.facebook button:hover{
+    background-color: rgb(81, 81, 247);
+}
+
+
+
+
+.google button a{
+    color:#141313;
+    
+}
+
+.facebook button a{
+    color: white;
+}
 
 
 
