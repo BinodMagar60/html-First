@@ -8,7 +8,7 @@
     <title>CCNVH</title>
     <script src="https://kit.fontawesome.com/5b5ba54d82.js" crossorigin="anonymous"></script>
 
-    <!-- <script>
+    <script>
         function searchbutton() {
           var query = document.getElementById("search-input").value;
           if (query.trim() !== "") {
@@ -17,7 +17,7 @@
           }
         }
       </script>
- -->
+ 
 
 
 
@@ -48,10 +48,11 @@
 
 <div class="search-rec">
     <div class="Search-box">
-        <form action="https://www.google.com/search?q=" method="get" class="search">
-            <input type="text" class="search-input" name="searchbox" placeholder="Search">
-            <button type="submit" name="searchbox"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div  class="search" >
+            <input type="text" class="search-input" id="search-input" name="searchbox" placeholder="Search">
         </form>
+            <button type="submit" name="searchbox" onclick="searchbutton()"><i class="fa-solid fa-magnifying-glass" ></i></button>
+        </div>
     </div>
 <div class="recom-container">
 
